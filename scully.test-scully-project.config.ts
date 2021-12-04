@@ -15,5 +15,5 @@ export const config: ScullyConfig = {
       }
     },
   },
-  defaultPostRenderers : ['seoHrefOptimize']
+  defaultPostRenderers : ['seoHrefOptimise']
 };

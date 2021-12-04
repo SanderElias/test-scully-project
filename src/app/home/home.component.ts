@@ -9,16 +9,12 @@ import { Observable } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
   // links$: Observable<ScullyRoute[]> = this.scully.available$;
-links$ : any;
+  links$ = this.scully.available$;
   constructor(private scully: ScullyRoutesService) { }
 
   ngOnInit(): void {
-    this.scully.available$
-    .subscribe((links) => {
-      console.log(links);
-    });
   }
-  }
+}
 
 
 
